@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1361907706 source:c:\users\tux\documents\dev\projects\hadamard\fm2kunlock\main.cpp
+	<iostream>
+	<fstream>
+
+1362237274 source:c:\users\tux\documents\dev\projects\fm2kunlock\main.cpp
+	<iostream>
+	<fstream>
+	<dirent.h>
+

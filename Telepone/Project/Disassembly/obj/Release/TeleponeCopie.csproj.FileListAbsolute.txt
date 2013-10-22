@@ -1,0 +1,13 @@
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\TeleponeCopie.csprojResolveAssemblyReference.cache
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.GenericResultsWindow.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.MainForm.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.OptionForm.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.ProfileDisplay.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.ProgressWindow.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.ReplayDetailViewForm.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.ReplayManagerForm.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.SpectatorOptionsForm.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.StartupForm.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.UserStatsEditorDlg.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\MTSP.UserStatsManager.resources
+C:\Users\Tux\Documents\Dev\Projects\FightingIsMagic\Telepone\Project\TeleponeCopie\obj\Release\TeleponeCopie.csproj.GenerateResource.Cache
