@@ -1,0 +1,95 @@
+[ For troubleshooting and game issues ]
+
+
+**How to install?
+
+ - Simply copy the contents of the zip file to a directory. 
+   You only need to worry about MTSP_FiM.exe and the /rsrc/ folder being in the same place.
+   The /rsrc folder containing all the images it needs will help.
+
+
+**Warning!
+
+ - MTSP tries to create some files and folders it needs, like mtsp.ini and ignores.txt.
+   If you don't have file or directory creation privileges, MTSP will surely not work properly.
+
+
+**MTSP won't run!
+
+ - Try downloading the visual c++ 2010 redistributable package.
+   It's annoying that you have to download this stuff, but it's a pretty small download,
+   and will allow you to run all sorts of programs with less errors.
+   http://www.microsoft.com/en-us/download/details.aspx?id=5555
+   (I've heard that the 64 bit version DOESN'T work)
+
+ - You might need to update your .net framework. Get 4.0 here:
+   http://www.microsoft.com/en-us/download/details.aspx?id=17851
+
+ - Try right click -> properties -> compatibility mode -> XP Service Pack 3 on MTSP.exe
+
+
+** Why am I having trouble running a certain game?
+
+ - For Pokemon Type Wild, try renaming uUTYPE WILD.exe and uUTYPE WILD.kgt
+   to wild.exe and wild.kgt.
+
+ - For Vanguard Princess, remove all Japanese writing from the directories.
+   Then, try renaming the .exe and .kgt to vp.exe and vp.kgt.
+   You may need to switch to Japanese locale.
+
+
+**Why doesn't spectate work?
+
+ - Because you or the host are using a version of MTSP older than 1.94.
+
+**MTSP crashes when starting a match!
+
+ - One of you may have illegal characters in your name.
+   Illegal characters can't be used in file paths, and the replay file
+   can't be created. This causes a crash. (fixed, but still occurs on the original MTSP)
+
+ - Some settings in your ini may be messed up. Try deleting the .ini
+   and redoing all your MTSP settings.
+
+
+**Weird lag and FPS drops when playing
+
+ - Are you using the joystick option inside the game? Do not use that.
+   Use joy2key or xpadder or something. Native FighterMaker joystick support is slow and bad.
+
+ - Try activating the "FPS stutter fix" in the performance tab of the program settings. 
+   (Or deactivate it if it doesn't help you)
+
+ - Try activating the faster input polling + netcode hack.
+
+ - The game blits to the screen slightly faster if the window is properly set as 640x480.
+   Fullscreen mode is slow, but faster on certain systems than a window.
+
+ - Replay saving incurs a minor performance hit.
+
+ - Get a better internet.
+
+
+**I get stuck after someone/I fail to challenge someone, and can't do anything until reconnecting.
+
+ - Click the rest button twice and it should reset your state.
+
+
+**Why do my pings/challenges/packets sometimes work but sometimes fail for no reason?
+
+ - Various networking issues. Maybe one side's ports aren't properly set. Maybe someone's
+   router/hardware is idling. Maybe firewalls are blocking UDP traffic.
+   Maybe they have minimized the program for more than 5 minutes. Sometimes reconnecting helps.
+
+
+**Why is their IP address red?
+
+ - It means they aren't connected from the usual address. Either it's not the same person,
+   or they have a dynamic IP, or they are connecting from a different internet source.
+
+
+**My problem still isn't solved
+
+ - If all else fails, try using the original MTSP, which is still compatible with this program,
+   although there is virtually no chance that this will solve the problem.
+

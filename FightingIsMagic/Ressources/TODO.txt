@@ -1,0 +1,71 @@
+=> Merge the fuck out of IWB's build's RD/FS.
+=> Replace Story/Versus on the title screen by Singleplayer/Multiplayer, also change the title screen to something better.
+
+=> RD lacks some knockback and stuff, probabl the hit junctions, see what IWB did
+
+=> Fix P1/P2 characters cursors, sometimes it seems to do shit.
+
+=> Add main menu splash for RD (maybe FS)
+=> Redraw the Mane4 moveset with the right moves, according to Help.txt (Because [Derp] changed them).
+=> Try to add RD/FS in the Mane4 moveset pic.
+
+=> Mod Telepone to prevent launching fight against incompatible build. See the verion info and check compatibility.
+-> The interesting code is in MainForm's declaration, see UdpClient, you need to find where the network receive code is to answer version/compatibility requests.
+-> private static UdpClient UDP; in MainForm's declaration
+-> The first thing called by mainform are ctor and then initializeComponents()
+-> Begin and AnalyzeCommands seems interesting !
+-> See UDP.beginReceive and SonarThread
+-> See MainForm.ReceivePackets, it looks like it's the network receive code. (Warning : File is HUGE)
+-> See case 0x21 and 0x22, seems like the version/compat check
+-> See Label_3A69: it's the compat check ! There is code to get versions infos here, see what it does then add code to autodeny match with uncompatible builds
+-> Game name is filename without extension, settings are from MTOPTIONS, data hash is just a hash of the UDP packet
+-> Just change the Telepone version to "2.06b-mlp" instead of "2.06b" in 0x21, then check version before accepting challenge.
+-> Use reflexil plugin for reflector to edit the source code ?
+-> Reflector/Reflexil sucks, it gens a corrupted .exe, impossible to reassemble and shitty to use, find something else.
+-> Somehow DotPeek could reverse it but it gave a shitty code linked with inexistant stuff. Can't compile.
+[12:09:20] Requesting version from user. (only v1.80+ will understand the request)
+[12:09:20] Server Admin's version: v2.06b
+[12:09:25] Requesting game settings from user. (only v1.84+ will understand the request)
+[12:09:28]               		You			Server Admin
+	 Game speed  	 ?			 8
+	 Timer       	 99			 99
+	 Max stage   	 1			 4
+	 Stage select	 0			 0
+	 Round       	 2			 2
+	 Game name   	 Fighting is Magic		 FightingIsMagic
+	 Data hash   	 FFFFFFFF			 2FF424
+
+=> RD is WAY too OP, nerf that shit. Also the launcjer that launchs itself is too easy.
+Bug : Occasionally the opponents health bar and pic would disappear till the next time I hit them. (=>Don't draw ModeSelect's health bars)
+Todo : Better difficulty ladder, from real easy, to little harder and only the last fight at 100%.
+=> A new image for the threads (with RD/FS ?)
+=>Merge Fluttershy with IWannabrawl (merge from his FS to my FS)
+=>Instead of GameOver-continueing when you loose in story mode, use life divergen of 0 to jump to a real Game Over demo then end.
+=>Random background on main menu not working (always rarity), but works fine in the editor. It's an FM2K problem, not my fault. [Derp] may have fixed this but it seems like his build have the same problem. The random generator always makes the same numbers when the game starts... => Maybe make a script that generate ~10 useless numbers before actually generating the numbers for random background.
+
+"Hope you know this isn't really a competitive fighting game anymore. There's too much done to it to make it competitive. It's been fluffed up so much that it's actually turned out worse. Iwanabrawl's and Derp's build were good because they kept (mostly) the original idea that this was a combo fighter in the game. Derp's fixed the teching, corner bugs, and a few other things while still letting it have a few combos. (Noted that it's extremely limited combos, but it was still somewhat fun) Brawl's build improved a few things such as the palette problem and added a good wholesome RD into the mix. RD even had some good playability. Both of these played fast and took a bit of skill to win matches in the higher end of play. This build of the game...... Ehhh.... It's so slow that you can barely link button presses together. There aren't that many links to other attacks you can do. Most of the follow-ups during combos that used to work before are now gone. Some of the normals barely even link. I can't even play it offline without getting annoyed by how slow it is. Now I'm not gonna rag on about how bad it is. There are some good features to it. Like the extra stages, Menu music, RD being there (Although she's barely playable), and some other things here and there. But overall this is more a "I can play as X pony" game instead of a fighting game. Nothing more.... well... nothing more at all. I would like to see this prosper as a fighting game, but right now it's not looking that way. Good work on what's been done though. "
+
+"
+Need better artist / animators. Not sure if it's just the pallet, but when I tested out Rainbow Dash, the outlined sections of her limbs would disappear if it went over her body so it would make her look like a blob.
+The story mode can use so writers, maybe music. The lines each of the discorded mane 6 say before you fight them is generic and cheesy. The difficulty ladder, which i'm assuming there is after a few play-throughs, seem to escalate pretty quickly. Although i'm not certain that there is a difficulty ladder for story mode, it still felt that it would get increasingly harder. It's almost deceiving as I can get a flawless victory on the first two matches then suddenly get almost pummeled on the 3rd or 4th.
+"
+
+"
+>maybe darker theme for fighting the corrupted mane6
+I might be able to help with that. I can do darker theme remixes for the mane6.
+Here's an example of the stuff I'm working on and learning how to do now:
+http://www.youtube.com/watch?v=tf7BGaRYBW4 [Embed]
+"
+
+"Rainbow Dash absolutely needs cleanup and polish. Missing/choppy frames, outline problems, and the fact that she is just too fucking cheesy. It's WAY TOO EASY to dominate the computer (I'd never use her against another player) with that long-range slide, and the rising uppercut -> down-kick combo is very, very easy to pull off."
+
+"So I had an Idea for a "Game Over" Screen, or rather "Go you, you beat the game"
+A scroll unfurled with Celestia's magic, she's offscreen. On the Scroll is a pic of the Mane 6 together. all battered, bruised and bandaged.
+It's signed "Thanks for playing!"
+Next Draw Thread I see i'm gonna request this."
+"> not 'A Winner is You'"
+
+"
+youtube.com/watch?v=B9NOJqe9yyo [Embed]
+you op i see that no one has posted these rainbow dash sprites yet. now i know they are not done but the sprites can be down loaded separately but a few of the pallet swaps are a bit glitchy. if these could be cleaned up it would be a nice improvement because the animations are a lot smoother."
+

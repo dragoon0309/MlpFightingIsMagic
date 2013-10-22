@@ -1,0 +1,6 @@
+The shortened link is goo.gl/NgkAp
+=> If you don’t set the music to “None”, it keep playing. Before playing a music, always add a None to prevent another music to play at the same time.
+=> The palette is common. Private palette for everything that is not the player and always check the Increase palette buttton if you don’t use private or you’ll break the palettes. (Translation is fucked up, this button does exactly the contrary of what it says).
+=> If you want to add/remove skills or players or anything in a list with FM2K, ADD IT AT THE END/REMOVE ONLY THE LAST, everything is referenced by its position in the lists so if you add/remove an item in the middle it'll offset and break everything ! Always add/remove at the end.
+=> Don't apply patch for same color in VS, it'll break the grey palette swap of story mode !
+=> OP you should really withhold update posts until peak times such as Thursdays and Fridays. That way you can reach a wider audience and have a better chance to pick up help

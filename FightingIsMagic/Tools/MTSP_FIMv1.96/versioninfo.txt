@@ -1,0 +1,187 @@
+~v1.96		11:42 AM 11/9/2012
+- Added support for loading different FM2K games with preset settings.
+  Check .\files\GameSettings to set presets.
+- Retranslated some stuff.
+- Chat color setting saves properly.
+
+~v1.95		7:31 PM 11/8/2012
+- Experimental new netcode and input polling method, coupled with a more effecient context switching scheme.
+  Technically this means MTSP will have to do 30% less work during online play.
+  Slower computers/connections or stages with transparency rendering slowdown might perform better.
+- You can now set an option to wait for important spectators to catch up.
+  This will cause slowdown when a spectator falls behind so don't leave it on all the time.
+- Different types of chat color printing schemes now available.
+- Fixed buggy replay endings.
+- Resized some emotes.
+
+
+~v1.94		7:58 PM 11/3/2012
+- Autoscroll toggle reenabled and other scrolling issues with emotes fixed.
+- The spectate has been tripled.
+- Fixed join spam.
+- Default max timer on a new install now defaults to 99.
+- Improperly setting DNS/not DNS no longer closes the program.
+- Secret emotes???
+
+
+~v1.93		6:06 PM 10/31/2012
+- Greatly increased chance of spectate working. Spectate a 1.93e+ host and it shouldn't fail.
+- Removed many lag switch exploits.
+- You are now notified whenever the opponent performs suspicious activity. Whether or not they
+  are purposefully causing lag depends on the situation and is up to you to decide.
+- Red IP addresses in profiles indicate that that user's IP is different from usual.
+- Fixed server crashing exploit.
+- Fixed startup problem with version info printing.
+- Fixed a bug when disconnecting from a server.
+- Added features for users with OCD.
+
+~v1.92		8:55 PM 10/13/2012
+- Fixed server stability. 
+- Fixed user states not updating.
+
+~v1.91		1:22 PM 10/12/2012
+- Desync detection. (only when both players have 1.91+ so UPGRADE TODAY)
+- Fixed tons of recently discovered exploits.
+- Fixed random crashes.
+- Replaced old random versus and ping decline system with superior one that uses
+  local ping data or netcode sequence pings.
+- Mostly unknown /dice command removed because it is both dumb and magically able to 
+  cause the program to freeze.
+- You can now RandomVersus against clients.(it's true, you couldn't before)
+
+~v1.90 		4:04 AM 10/10/2012
+- Fixed servers.
+- Fixed duplicate messages.
+- Fixed ignore and decline lists getting deleted.
+- Version info display when starting.
+- Re-enabled multiple emotes in the same line.
+
+~v1.89		3:17 AM 10/9/2012
+- Finally fixed ridiculous negative pings that reported latency of 14234023ms and such.
+- Fixed servers not sending correct user info around and getting errors.
+- Pings can now decipher the username in old client pong replies. (no more [old client])
+- Fixed profile font size sometimes getting smaller.
+- Try right clicking in the profile to open links or copy the comment.
+- Ignore/decline settings reflected in profiles.
+- A bunch of other profile adjustments.
+- Fixed several random crashes when connecting/disconnecting to a server.
+- Fixed local stats sometimes not saving.
+- You now ask the server for an updated member list every 80 seconds or so.
+
+~v1.88		10:05 AM 10/8/2012
+- Probably improved user to user connectivity situation by a lot.
+- Fixed gg messages crashing.
+- Ping display in profiles with averages saved locally. (weird gigantic pings are ignored)
+- Some automatic silent pings occur. No need to ping everyone to update profile.
+- Cleaned up some other stuff with profiles.
+- Fixed the region setting not saving.
+- You can minimize to the system tray if you are a server.
+
+~v1.87		2:08 AM 10/7/2012
+- Added new profile system and added framework for more owner-draw GUI elements.
+- Replaced VS counter with local stat tracking. Now records how long you've played a person.
+- Finally fixed timestamp in the middle of incoming challenge request strings.
+- Clarified/retranslated some options in program settings.
+- You can now refresh the member list since member joins are the most commonly lost UDP packets.
+
+~v1.86		2:59 PM 9/25/2012
+(mislabeled as 1.85)
+- Fixed annoying duplicate member entries in the member list.
+- Max ping setting now declines incoming challenges. ~(doesn't work. it declines outgoing ones)
+- Made it easier to fix game.ini problems.
+- Open game.ini at any time with /exeini.
+- Made replay manager more responsive + GUI improvements.
+- Added note to new packet functions.
+
+~v1.85 		10:27 PM 9/21/2012
+- Added new stutter/fps fix option under performance tab. If you don't get stutter, DISABLE IT.
+- Added option to disable single player replay saving.
+- Fixed state not updating when connecting sometimes.
+- Fixed random crashes.
+- New security measures added to prevent abuse.
+
+~v1.84
+- Bug fixes.
+
+~v1.83
+- You won't random versus anyone on your decline list.
+- Timer is set to infinite when launching single player through MTSP.
+- Fixed many bugs and obscure memory leaks caused by illegal cross thread calls.
+- Game thread priority setting.
+- GUI optimization options.
+- Added compatibility check option to member menu. (with other clients v1.83+)
+- Fixed replay manager delete not updating replay list.
+- Reconnect button.
+- Simple help link added to help menu.
+- Minor crash fixes.
+- Infrastructure added for future development of functions.
+- Another emote.
+
+~v1.82
+- Fixed process force close on win 7 maybe.
+- Added option to disable force close.
+
+~v1.81
+- "Get version" works. (with other clients v1.81+)
+- Clarified replay save messages.
+
+~v1.80
+- More replay functionality. Perhaps... too much functionality.
+- Replay manager favoriting/commenting/sorting enabled.
+- AutoGG doesn't activate unless a certain amount of time has elapsed in a match.
+- MTSP now detects and closes all FM2K processes after a game ends so none will
+  linger as background ghost processes.
+- Invalid username checking.
+- You can now type /gg and /comment to output your gg message or comment.
+- New (secret?) emoticons.
+- Typo fixes.
+
+~v1.78
+- bug fixes.
+
+~v1.77
+- Emotes resized to sane sizes.
+- Emote disable button.
+
+~v1.76
+- Added emotes /kappa, /fraud, /pshrug, one per line.
+- Stopped multiline comment display in main chat.
+- Added actual toolbar.
+- Added quicklaunch single player button.
+- Increased server connection limit.
+
+~v1.75
+- Addressed issue where your state would become corrupted after failing to be challenged.
+- Added replay manager for cleaning out replay folders.
+- "Query version" might work now. (it doesn't)
+
+~v1.73
+- Minor lag issue improved.
+- Fixed auto gg bugs.
+- Added sought opponent skill level chooser which will be displayed in the comment.
+
+~v1.72
+- /!\ CHECK YOUR IGNORE FILE /!\ There was a bug that littered it with extra names.
+- Added auto gg "feature".
+- Fixed autoscroll toggle.
+- Fixed players with invalid characters in their name crashing MTSP after the game launches.
+- Added simpler ignore/decline/server list editing.
+- New icons.
+
+~v1.71
+- Fixed major crash bug.
+
+~v1.70
+- Max ping setting will save.
+- Fixed crash when switching to free mode after failing to connect to a server.
+
+
+- MTSP FiM Special thanks -
+*To all who have been testing the program
+*Hex Hooves and TBTE for hosting
+*Fosh, Mezzanyne, Klux, Rinzuul, Derpy, Tonight for some suggestions and hardcore testing
+*Ponygoons for some emotes
+*nums0ic for fluttershy emote
+*Mane6 for creating Fighting is Magic
+*Original creators of MTSP and Lunaport
+*Applejack for best pones	

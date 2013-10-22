@@ -1,0 +1,62 @@
+<= SKULLGIRLS =>
+
+=> Find some code, load into IDA, and then find procedures that open assets.
+
+=> Find the file formats used by the engine, extract assets. Find tools that can deal with theses formats. Documents what does what, tons of plain text, ini and LUA, lots of lua, (must be slow as fuck btw).
+
+Engine uses a separate ressource system a la FM2K, so respriting should be easy. Even creating tools/editors to deal with these formats should be easy.
+
+Files types : txt, lua, ini, fx, spt, stm, msb, lvl, dds, gbs, xma2, seq, bundle, art, art-pt, foit, snd-xma2, sal
+
+Details :
+
+fx : What it says on the tin, shaders in plain text, example :
+
+struct PS_INPUT
+
+{
+
+   float4 color: COLOR0;
+
+};
+
+struct PS_OUTPUT
+
+{
+
+   float4 color : COLOR;
+
+};
+
+PS_OUTPUT Base(in PS_INPUT input)
+
+{
+
+   PS_OUTPUT output;
+
+   output.color = input.color.rgba; // note that for PS3/windows this is backward ;^)
+
+   return output;
+
+}
+
+art : There are multiple magics for these files. Sometime ‘ˆ and sometime random stuff. Probably no magic, weird header or encryption/conpression. Private file format ? People have been trying to open thoses -> google more.
+
+Find a repeated patern on the files
+
+=> hitspark
+
+00 fe 0a 00 04 8d 15 84 00 8e 15 84 00 8e 15 84 00 8d 15 86 00 83 15 8e 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 83 15 86 00 8d 15 84 00 8e 15 84 00 8e 15 84 00 8d 15 86 00 83 15 8e 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 83 15 86 00 8d 15 84 00 8e 15 84 00 8e 15 84 00 8d 15 86 00 83 15 8e 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 83 15 86 00 8d 15 84 00 8e 15 84 00 8e 15 84 00 8d 15 86 00 8d 15 84 00 8e 15 84 00 8e 15 84 00 8d 15 8f 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 83 15 86 00 8d 15 84 00 8e 15 84 00 8e 15 84 00 8d 15 8f 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 84 15 84 00 83 15 86
+
+=> 00841584
+
+=> Not working, or just not the same for each file. Just find some ASM that deals with assets. Somehow.
+
+snd-xma2: Wav sound files, use xmash. see http://forum.xentax.com/viewtopic.php?f=17&t=8821
+
+
+=> Le fluffie, extract LIVE/PIRS files. With a furry background. Gosh.
+
+=> Find skullgirls and try to reverse a bit. Xbox xlba version here dl.free.fr/vy03zvV1W.
+
+</Skullgirls>

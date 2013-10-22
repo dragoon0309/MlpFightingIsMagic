@@ -1,0 +1,10 @@
+Changelog : 
+- Added Crouched idle
+- Prepared RD's sprites for palette swaps (62 base colors)
+- Nameplate, icon0, meter and char_select splash ready for RD
+- RD win pose
+
+Don't forget to add important things before realease, and to test things.
+Think about everything
+
+Also do basic things for FS, like meter/nameplate (maybe splash, maybe icon0)

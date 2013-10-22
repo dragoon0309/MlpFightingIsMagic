@@ -1,0 +1,4 @@
+List of cleaned sprites (No black/dark border, no transparent eyes,no lonely pixels,...)
+
+Standing
+CM

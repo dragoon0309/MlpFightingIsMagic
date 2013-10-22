@@ -1,0 +1,23 @@
+C:\Example\anime.exe
+7
+1
+2
+99
+1
+90
+90
+#
+
+
+-# Explanation of fields for quick preset file #-
+1. Game path
+2. Max stage
+3. Stage select
+4. Rounds
+5. Timer
+6. Show Hitboxes (0 or 1)
+7. SFX volume (0 to 100)
+8. BGM volume (0 to 100)
+
+Warning: Trouble commonly occurs when there are japanese characters somewhere in the path.
+Try renaming folders and files in the path that have Japanese characters.

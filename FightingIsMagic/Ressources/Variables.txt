@@ -1,0 +1,118 @@
+    ====[System Vars.]====
+    A - P1 hit counter ones place
+    B - P1 hit counter tens place
+    C - P2 hit counter ones place
+    D - P2 hit counter tens place
+    E - P1 Life Gauge color
+    F - P2 Life Gauge color
+    G - Stage Effects
+    H - P1 Meter Bar color
+    I - P2 Meter Bar color
+    J
+    K - RNG 0-999
+    L
+    M
+    N
+    O
+    P
+     
+     
+    ====[AJ Char. Vars.]====
+    A
+    B
+    C - Magic Meter (+ uses meter, - gains meter)
+    D - Player indicator using initial x coord. (>300=P2)
+    E
+    F
+    G - "Hit Severity" counter
+            5=Super
+            0=neutral
+            -1=Blocking
+            -2=weak/mid hit
+            -3=Strong hit
+            -4=Very strong hit
+            -5=Super hit
+    H
+    I
+    J
+    K - RNG 0-999
+    L
+    M - Launches (max 2)
+    N - Wallbounce Count (max 2)
+    O - Groundbounce Count (max 1)
+    P - Blowback Count (max 4)
+     
+    ====[Twi Char. Vars.]====
+    A - Teleport hide shadow
+    B -
+    C - Magic Meter (+ uses meter, - gains meter)
+    D - Player indicator using initial x coord. (>300=P2)
+    E
+    F
+    G - "Hit Severity" counter
+            5=Super
+            0=neutral
+            -1=Blocking
+            -2=weak/mid hit
+            -3=Strong hit
+            -4=Very strong hit
+            -5=Super hit
+    H - Projectile exists flag
+    I
+    J - Double jump counter
+    K - RNG 0-999
+    L
+    M - Launches (max 2)
+    N - Wallbounce Count (max 2)
+    O - Groundbounce Count (max 1)
+    P - Blowback Count (max 4)
+     
+    ====[Rarity Char. Vars.]====
+    A
+    B -
+    C - Magic Meter (+ uses meter, - gains meter)
+    D - Player indicator using initial x coord. (>300=P2)
+    E
+    F
+    G - "Hit Severity" counter
+            5=Super
+            0=neutral
+            -1=Blocking
+            -2=weak/mid hit
+            -3=Strong hit
+            -4=Very strong hit
+            -5=Super hit
+    H
+    I
+    J
+    K - RNG 0-999
+    L
+    M - Launches (max 2)
+    N - Wallbounce Count (max 2)
+    O - Groundbounce Count (max 1)
+    P - Blowback Count (max 4)
+     
+    ====[Pinkie Char. Vars.]====
+    A - Crouch shadow
+    B
+    C - Magic Meter (+ adds meter, - uses meter)
+    D - Player indicator using initial x coord. (>300=P2)
+    E - Pinkamena Flag
+    F
+    G - "Hit Severity" counter
+            5=Super
+            0=neutral
+            -1=Blocking
+            -2=weak/mid hit
+            -3=Strong hit
+            -4=Very strong hit
+            -5=Super hit
+    H - Var rev I->present coord
+    I - X coord cannnon item
+    J - Var rev I->food coord
+    K - RNG 0-999
+    L - Food type
+    M - Launches (max 2)
+    N - Wallbounce Count (max 2)
+    O - Groundbounce Count (max 1)
+    P - Blowback Count (max 4)
